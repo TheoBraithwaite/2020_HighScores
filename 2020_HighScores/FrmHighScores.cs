@@ -32,5 +32,19 @@ namespace _2020_HighScores
                 highScores.Add(new HighScores(values[0], Int32.Parse(values[1])));
             }
         }
+        public void DisplayHighScores()
+        {
+            foreach (HighScores s in highScores)
+            {
+                ListBoxName.Items.Add(s.Name);
+                ListBoxScore.Items.Add(s.Score);
+
+            }
+        }
+
+        private void FrmHighScores_Load(object sender, EventArgs e)
+        {
+            DisplayHighScores();
+        }
     }
 }

@@ -36,14 +36,14 @@
             this.lblPlayerScore = new System.Windows.Forms.Label();
             this.lblMessage = new System.Windows.Forms.Label();
             this.btnReturn = new System.Windows.Forms.Button();
-            this.listBox2 = new System.Windows.Forms.ListBox();
-            this.listBox3 = new System.Windows.Forms.ListBox();
+            this.ListBoxScore = new System.Windows.Forms.ListBox();
+            this.ListBoxName = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 51);
+            this.label1.Location = new System.Drawing.Point(35, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(117, 51);
+            this.label2.Location = new System.Drawing.Point(102, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 1;
@@ -112,29 +112,29 @@
             this.btnReturn.Text = "Return to Game Form";
             this.btnReturn.UseVisualStyleBackColor = true;
             // 
-            // listBox2
+            // ListBoxScore
             // 
-            this.listBox2.FormattingEnabled = true;
-            this.listBox2.Location = new System.Drawing.Point(120, 67);
-            this.listBox2.Name = "listBox2";
-            this.listBox2.Size = new System.Drawing.Size(58, 121);
-            this.listBox2.TabIndex = 9;
+            this.ListBoxScore.FormattingEnabled = true;
+            this.ListBoxScore.Location = new System.Drawing.Point(87, 67);
+            this.ListBoxScore.Name = "ListBoxScore";
+            this.ListBoxScore.Size = new System.Drawing.Size(74, 121);
+            this.ListBoxScore.TabIndex = 9;
             // 
-            // listBox3
+            // ListBoxName
             // 
-            this.listBox3.FormattingEnabled = true;
-            this.listBox3.Location = new System.Drawing.Point(19, 67);
-            this.listBox3.Name = "listBox3";
-            this.listBox3.Size = new System.Drawing.Size(58, 121);
-            this.listBox3.TabIndex = 10;
+            this.ListBoxName.FormattingEnabled = true;
+            this.ListBoxName.Location = new System.Drawing.Point(19, 67);
+            this.ListBoxName.Name = "ListBoxName";
+            this.ListBoxName.Size = new System.Drawing.Size(71, 121);
+            this.ListBoxName.TabIndex = 10;
             // 
             // FrmHighScores
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(384, 361);
-            this.Controls.Add(this.listBox3);
-            this.Controls.Add(this.listBox2);
+            this.Controls.Add(this.ListBoxName);
+            this.Controls.Add(this.ListBoxScore);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.lblMessage);
             this.Controls.Add(this.lblPlayerScore);
@@ -145,6 +145,7 @@
             this.Controls.Add(this.label1);
             this.Name = "FrmHighScores";
             this.Text = "FrmHighScores";
+            this.Load += new System.EventHandler(this.FrmHighScores_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -160,7 +161,7 @@
         private System.Windows.Forms.Label lblPlayerScore;
         private System.Windows.Forms.Label lblMessage;
         private System.Windows.Forms.Button btnReturn;
-        private System.Windows.Forms.ListBox listBox2;
-        private System.Windows.Forms.ListBox listBox3;
+        private System.Windows.Forms.ListBox ListBoxScore;
+        private System.Windows.Forms.ListBox ListBoxName;
     }
 }
