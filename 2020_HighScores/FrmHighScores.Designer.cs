@@ -43,7 +43,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 51);
+            this.label1.Location = new System.Drawing.Point(40, 51);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
@@ -52,7 +52,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(102, 51);
+            this.label2.Location = new System.Drawing.Point(143, 51);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(44, 13);
             this.label2.TabIndex = 1;
@@ -115,9 +115,9 @@
             // ListBoxScore
             // 
             this.ListBoxScore.FormattingEnabled = true;
-            this.ListBoxScore.Location = new System.Drawing.Point(87, 67);
+            this.ListBoxScore.Location = new System.Drawing.Point(114, 67);
             this.ListBoxScore.Name = "ListBoxScore";
-            this.ListBoxScore.Size = new System.Drawing.Size(74, 121);
+            this.ListBoxScore.Size = new System.Drawing.Size(108, 121);
             this.ListBoxScore.TabIndex = 9;
             // 
             // ListBoxName
@@ -125,7 +125,7 @@
             this.ListBoxName.FormattingEnabled = true;
             this.ListBoxName.Location = new System.Drawing.Point(19, 67);
             this.ListBoxName.Name = "ListBoxName";
-            this.ListBoxName.Size = new System.Drawing.Size(71, 121);
+            this.ListBoxName.Size = new System.Drawing.Size(96, 121);
             this.ListBoxName.TabIndex = 10;
             // 
             // FrmHighScores

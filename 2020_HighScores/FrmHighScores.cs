@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
+using System.Resources;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -44,6 +46,16 @@ namespace _2020_HighScores
 
         private void FrmHighScores_Load(object sender, EventArgs e)
         {
+            int lowest_score = highScores[(highScores.Count - 1)].Score;
+            if (int.Parse(lblPlayerScore.Text) > lowest_score)
+            {
+                lblMessage.Text = "You have made the Top Ten! Well Done!";
+            }
+            else
+            {
+                lblMessage.Text = "Keep trying to make the top ten!";
+            }
+            highScores.Add(new HighScores(lblPlayerName.Text, int.Parse(lblPlayerScore.Text)));
             DisplayHighScores();
         }
     }
