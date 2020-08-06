@@ -111,6 +111,7 @@
             this.btnReturn.TabIndex = 7;
             this.btnReturn.Text = "Return to Game Form";
             this.btnReturn.UseVisualStyleBackColor = true;
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // ListBoxScore
             // 
