@@ -35,6 +35,10 @@ namespace _2020_HighScores
             }
             reader.Close();
         }
+        public void SortHighScores()
+        {
+            highScores = highScores.OrderByDescending(hs => hs.Score).Take(10).ToList();
+        }
         public void DisplayHighScores()
         {
             foreach (HighScores s in highScores)
@@ -57,11 +61,8 @@ namespace _2020_HighScores
             {
                 lblMessage.Text = "Keep trying to make the top ten!";
             }
+            SortHighScores();
             DisplayHighScores();
-        }
-        public void SortHighScores()
-        {
-            highScores = highScores.OrderByDescending(hs => hs.Score).Take(10).ToList();
         }
         public void SaveHighScores()
         {
@@ -76,10 +77,10 @@ namespace _2020_HighScores
 
         private void btnReturn_Click(object sender, EventArgs e)
         {
+            SaveHighScores();
             frmGame FrmGame2 = new frmGame();
             Hide();
             FrmGame2.ShowDialog();
-            SaveHighScores();
         }
     }
 }
